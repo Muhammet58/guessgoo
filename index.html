@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Quessing Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
+</head>
+<body>
+
+    <div class="main">
+        <div class="box">
+            <button class="theme-btn">
+                <span class="icon">
+                    <i class="fa-solid fa-sun"></i>
+                </span>
+                <span class="toggle"></span>
+                <span class="icon">
+                    <i class="fa-solid fa-moon"></i>
+                </span>
+            </button>
+
+            <h1 class="title">GuessGoo</h1>
+            <p class="text">1 ile 100 arası bir sayı tuttum.<br>Bakalım kaç denemede bulabiliceksin ?</p>
+            <div class="tag-container">
+                <div class="tag">Deneme: <span class="trial-counter">0</span> / 5</div>
+                <div class="tag">En iyi skor: <span class="score-counter">0</span></div>
+            </div>
+            <input type="text" class="number-input">
+            <button class="guess-btn">Tahmin Et</button>
+            <div class="footer">
+                <div class="direction-text"></div>
+                <button class="reboot-btn" id="rebootBtn" style="display: none;">Yeniden Başlat</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

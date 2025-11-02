@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap');
+
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+.main {background: #F1F7FA; width: 100vw; height: 100vh; display: flex; justify-content: center; align-items: center; transition: ease .3s;}
+.main.dark-mode {background-color: #121212;}
+
+.box {width: 400px; height: 450px; background-color: #F5F7FA; border-radius: 13px; display: grid; justify-content: center; align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.1); box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.1); padding: 25px 25px 10px 25px; position: absolute; transition: ease .3s;}
+.box.dark-mode {background-color: #1a1919; border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: inset 0px 4px 10px rgba(255, 255, 255, 0.1);}
+
+.title {color: #2B2B2B; font-size: 32px; font-family: "Momo Trust Display", sans-serif; text-align: center; transition: ease .3s;} 
+.title.dark-mode {color: #F1F7FA;}
+
+.text {color: #2B2B2B; font-size: 16px; font-weight: bold; font-family: sans-serif; text-align: center; transition: ease .3s;}
+.text.dark-mode {color: #F1F7FA} 
+
+.tag-container {display: flex; align-items: center; justify-content: space-around;}
+
+.tag {background-color: #dae4ec; color: #2B2B2B; padding: 7px 15px; border-radius: 13px; font-size: 15px; font-weight: bold; font-family: sans-serif;
+    border: 1px solid rgba(0, 0, 0, 0.1); box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.1);}
+.tag.dark-mode {background: #121212; color: #F1F7FA; border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: inset 0px 4px 10px rgba(255, 255, 255, 0.1);}
+
+.number-input {border-radius: 13px; height: 70px; text-align: center; border: 1px solid rgba(0, 0, 0, 0.1); box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.1);
+    font-size: 23px; font-weight: bold; font-family: sans-serif; outline: none; transition: ease .3s;}
+.number-input.dark-mode {background-color: #121212; color: #F1F7FA; border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: inset 0px 4px 10px rgba(255, 255, 255, 0.1);}
+
+.number-input:focus {border: 1px solid rgba(0, 0, 0, 0.2);}
+.number-input.dark-mode:focus {border: 1px solid rgba(255, 255, 255, 0.2);}
+
+.guess-btn {background-color: #d0e8fb; height: 100%; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 13px; color: #2B2B2B;
+    box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.1);  font-family: "Momo Trust Display", sans-serif; font-size: 18px; transition: ease .3s;}
+.guess-btn.dark-mode {background-color: #121212; color: #F1F7FA; border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: inset 0px 4px 10px rgba(255, 255, 255, 0.1);}
+
+.guess-btn:hover {background-color: #9ed1fc; border: 1px solid rgba(0, 0, 0, 0.2);}
+.guess-btn.dark-mode:hover {background-color: #080808; border: 1px solid rgba(255, 255, 255, 0.2);}
+
+.guess-btn:active {background-color: #76c0fd; border: 1px solid rgba(0, 0, 0, 0.3);}
+.guess-btn.dark-mode:active {background-color: #000; border: 1px solid rgba(255, 255, 255, 0.2);}
+
+.footer {display: flex; flex-direction: column; align-items: center; gap: 13px;}
+
+.direction-text {text-align: center; color: #2B2B2B; font-size: 16px; font-family: "Momo Trust Display", sans-serif; transition: ease .3s;}
+.direction-text.dark-mode {color: #F1F7FA}
+
+.reboot-btn {background-color: #d0e8fb; padding: 5px 15px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 13px; color: #2B2B2B;
+    box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.1);  font-family: "Momo Trust Display", sans-serif; font-size: 18px; transition: ease .3s}
+.reboot-btn.dark-mode {background-color: #121212; color: #F1F7FA; border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: inset 0px 4px 10px rgba(255, 255, 255, 0.1);}
+
+.reboot-btn:hover {background-color: #9ed1fc; border: 1px solid rgba(0, 0, 0, 0.2);}
+.reboot-btn.dark-mode:hover {background-color: #080808; border: 1px solid rgba(255, 255, 255, 0.2);}
+
+.reboot-btn:active {background-color: #76c0fd; border: 1px solid rgba(0, 0, 0, 0.3);}
+.reboot-btn.dark-mode:active {background-color: #000; border: 1px solid rgba(255, 255, 255, 0.2);}
+
+.theme-btn {position: absolute; width: 60px; height: 30px; border-radius: 13px; top: 5px; right: 5px; border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.1); display: flex; justify-content: space-around; align-items: center; background: #F1F7FA;}
+.theme-btn.dark-mode {background-color: #121212; border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: inset 0px 4px 10px rgba(255, 255, 255, 0.1);}
+
+.toggle {width: 20px; height: 20px; background-color: #2B2B2B; border-radius: 50%; position: absolute; left: 5px; transition: ease .3s;}
+.toggle.dark-mode {background-color: #F1F7FA;}
+
+.icon {color: #2B2B2B}
+.icon.dark-mode {color: #F1F7FA;}
+
+@media only screen and (max-width: 600px) {
+    .box {width: 300px; height: 400px;}
+
+    .title {font-size: 25px;}
+
+    .text {font-size: 15px;}
+
+    .number-input, .guess-btn {width: 90%; margin: 0 auto;}
+
+    .tag {font-size: 13px;}
+}
