@@ -19,7 +19,7 @@ Mobil uyumlu yapısı sayesinde hem tarayıcıda hem de mobil cihazlarda çalı�
 
 ## Ekran Görüntüleri
 
-<img width="1881" height="960" alt="image" src="https://github.com/user-attachments/assets/2f22cddd-ec22-4c25-b341-72093fb00880" />
+<img width="1906" height="983" alt="image" src="https://github.com/user-attachments/assets/5c84d9f9-91e7-423c-94a9-3b99dc9f67e5" />
 
 <img width="1892" height="975" alt="image" src="https://github.com/user-attachments/assets/6580f446-0ca2-45b0-a54c-6ccd6d1264f0" />
 
