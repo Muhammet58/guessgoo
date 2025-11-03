@@ -1,8 +1,8 @@
 # GuessGoo
 
 Minimal ve zarif bir **sayı tahmin oyunu**.  
-HTML, CSS ve JavaScript ile geliştirilmiş hızlı ve keyifli bir mini web oyunudur.  
-Mobil uyumlu yapısı sayesinde hem tarayıcıda hem de mobil cihazlarda çalışır.
+HTML, CSS ve JavaScript ile geliştirilmiş hızlı ve keyifli bir mini web oyunudur.
+Mobil uyumlu yapısı sayesinde hem web tarayıcılarında hem de mobil cihazlarda çalışır.
 
 
 ## Özellikler
