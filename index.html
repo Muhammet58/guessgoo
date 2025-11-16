@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Number Quessing Game</title>
+    <link rel="icon" type="image/x-icon" href="images/rounded-in-photoretrica.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
 </head>
@@ -22,9 +23,27 @@
             </button>
 
             <h1 class="title">GuessGoo</h1>
-            <p class="text">1 ile 100 arası bir sayı tuttum.<br>Bakalım kaç denemede bulabiliceksin ?</p>
+            <p class="text"><span class="number-range">1 ile 50</span> arası bir sayı tuttum.<br>Bakalım kaç denemede bulabiliceksin ?</p>
+
+            <div class="difficulty-selector">
+                <div class="difficulty-buttons">
+                    <div class="difficulty-indicator"></div>
+                    <button class="difficulty-btn" data-mode="easy">Kolay</button>
+                    <button class="difficulty-btn" data-mode="medium">Orta</button>
+                    <button class="difficulty-btn" data-mode="hard">Zor</button>
+                </div>
+            </div>
+
+            <div class="game-mode-selector">
+                <div class="game-mode-buttons">
+                    <div class="game-mode-indicator"></div>
+                    <button class="game-mode-btn" data-type="score">Skor</button>
+                    <button class="game-mode-btn" data-type="time">Süre</button>
+                </div>
+            </div>
+
             <div class="tag-container">
-                <div class="tag">Deneme: <span class="trial-counter">0</span> / 5</div>
+                <div class="tag"><span class="trial-text">Deneme:</span> <span class="trial-counter">0</span> <span class="slash">/</span> <span class="trial">6</span></div>
                 <div class="tag">En iyi skor: <span class="score-counter">0</span></div>
             </div>
             <input type="text" class="number-input">
@@ -33,7 +52,7 @@
                 <div class="direction-text"></div>
                 <button class="reboot-btn" id="rebootBtn" style="display: none;">Yeniden Başlat</button>
             </div>
-        </div>
+        </di>
     </div>
 
     <script src="script.js"></script>
